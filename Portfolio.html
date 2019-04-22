@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<title>Adhit Thakur Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ROBOTICS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">ROBOTICS IMAGES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Student, Programmer, and Musician</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-Black" style="font-size:90px">Adhit<br>Thakur</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ROBOTICS </span></h5>
+    <p>Drive Control:</p>
+    <p>When coding a robot, you must start with the basics: drive control. The drive control provides the basic instructions for how the robot is driven, or what buttons should be clicked for each action. The code shown to the left shows the code for the drive control for one of the competitions. In this code, two types of driving are available : Arcade style or Tank drive. A button on the controller is assigned to each of these drives, and when clicked, the selected action is performed.</p>
+    <p>Vision Sensor Auton:</p>
+    <p>Although not very successful, I also assisted in creating a vision sensor auton. Through the use of the camera within the vision sensor, I took pictures of the key game elements (ball, flag of both teams, etc). After taking the picture, I adjusted the parameters so that specific parts of each box were targeted. After that, each color was assigned to a variable, and the code was completerd from there.</p>
+    <p>* The images for the projects are shown below *</p>
+    </div>
+    <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong></strong></p>
+    <p><strong></strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ROBOTICS IMAGES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Drive</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Sensor Auton</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+       <div class="w3-full">
+        <img src="DrivePartOne.png" style="width:100%">
+      </div>
+      <div class="w3-full">
+        <img src="DrivePartTwo.png" style="width:100%">
+      </div>
+    
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <div class="w3-full">
+        <img src="VisionOne.png" style="width:100%">
+      <div class="w3-full">
+        <img src="VisionTwo.png" style="width:100%">
+      </div>
+      <div class="w3-full">
+        <img src="VisionThree.png" style="width:100%">
+      </div>
+      <div class="w3-full">
+        <img src="VisionFour.png" style="width:100%">
+      </div>
+      <div class="w3-full">
+        <img src="VisionFive.png" style="width:100%">
+      </div>
+      <div class="w3-full">
+        <img src="VisionSix.png" style="width:100%">
+      </div>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p></p>
+    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">PHONE:</span> My phone number is 848-667-5533</p>
+    <p><span class="w3-tag">Email:</span> My email is adhit612@gmail.com</p>
+    <p>*OR, you can contact me below</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Created by: <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Adhit Thakur</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
